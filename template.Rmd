@@ -1,0 +1,50 @@
+---
+title: "Simple document"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+I'm an R Markdown document! 
+
+# Section 1
+
+Here's a **code chunk** that samples from 
+a _normal distribution_:
+
+```{r}
+samp = rnorm(100)
+length(samp)
+```
+
+# Section 2
+
+I can take the mean of the sample, too!
+The mean is `r mean(samp)`.
+
+# Section 3
+
+## subsection
+
+### subsubsection
+
+This is going to make a plot
+ctrl+alt+i to create code chunks
+need to load libraries every time knit
+# "echo = false" to hide code in viewer 
+# "eval = false" to hide result
+# {r name_of_the_chunk}
+
+```{r chunk_scatterplot}
+plot_df =
+  tibble(
+    x = rnorm(n=1000),
+    y = 1 + 2 * x + rnorm(n = 1000)
+  )
+
+ggplot(plot_df, aes(x = x, y = y)) + geom_point()
+```
+
