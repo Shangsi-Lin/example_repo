@@ -18,6 +18,7 @@ a _normal distribution_:
 ```{r}
 samp = rnorm(100)
 length(samp)
+x=0
 ```
 
 # Section 2
