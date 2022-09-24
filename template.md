@@ -33,7 +33,7 @@ x=0
 
 # Section 2
 
-I can take the mean of the sample, too! The mean is -0.0132529.
+I can take the mean of the sample, too! The mean is -0.0969259.
 
 # Section 3
 
